@@ -1,0 +1,14 @@
+fileVersion: 1
+id: "22"
+mappingDefinitions:
+  SL_LOADTABLES:
+    database: BIKE
+    schema: LOAD
+  SL_ODS:
+    database: BIKE
+    schema: ODS
+  SL_STAGING:
+    database: BIKE
+    schema: STAGING
+name: DEV_ENV
+type: Environment
