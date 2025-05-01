@@ -1,0 +1,128 @@
+fileVersion: 1
+id: 22fef245-a55a-4b38-8bea-68c4333bf91f
+name: STG_VW_WEATHER
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: SL_STAGING
+  materializationType: view
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 49fe6e21-f39f-496b-9139-ab43271170b4
+          stepCounter: 22fef245-a55a-4b38-8bea-68c4333bf91f
+        config: {}
+        dataType: VARCHAR(20)
+        description: ""
+        name: POSTAL_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: af2ee1ae-74b2-495b-86b2-34223dfd314a
+                stepCounter: 61c5103d-f3d1-4965-812b-cc47ca917020
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 669ca252-0d90-43f5-8c3f-d740bd37bd62
+          stepCounter: 22fef245-a55a-4b38-8bea-68c4333bf91f
+        config: {}
+        dataType: DATE
+        description: ""
+        name: DATE_VALID_STD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2aafb137-1f12-4645-9787-26ce7037b023
+                stepCounter: 61c5103d-f3d1-4965-812b-cc47ca917020
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 544db718-655a-4f5d-8cf4-456f1aec240b
+          stepCounter: 22fef245-a55a-4b38-8bea-68c4333bf91f
+        config: {}
+        dataType: NUMBER(38,1)
+        description: ""
+        name: TOT_PRECIPITATION_MM
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c9cd36de-015f-4f48-82a1-1db42dfa8aa9
+                stepCounter: 61c5103d-f3d1-4965-812b-cc47ca917020
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5b53b1a0-3d67-4183-b520-7117ddf6394d
+          stepCounter: 22fef245-a55a-4b38-8bea-68c4333bf91f
+        config: {}
+        dataType: NUMBER(38,1)
+        description: ""
+        name: TOT_SNOWFALL_CM
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cb2d7b1d-ff64-49ac-8a1d-963fbb91db5e
+                stepCounter: 61c5103d-f3d1-4965-812b-cc47ca917020
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f5ec8bda-8c42-4f08-9627-21d4f8b2c562
+          stepCounter: 22fef245-a55a-4b38-8bea-68c4333bf91f
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: AVG_CLOUD_COVER_TOT_PCT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a320287d-91f3-432b-9755-fd731cbace88
+                stepCounter: 61c5103d-f3d1-4965-812b-cc47ca917020
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 12d2d075-b451-475d-9692-30b2bcbe0fbc
+          stepCounter: 22fef245-a55a-4b38-8bea-68c4333bf91f
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: CLOUDY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a320287d-91f3-432b-9755-fd731cbace88
+                stepCounter: 61c5103d-f3d1-4965-812b-cc47ca917020
+            transform: |-
+              CASE WHEN "VW_WEATHER"."AVG_CLOUD_COVER_TOT_PCT" BETWEEN 0  AND 10  THEN 'Clear'
+                   WHEN "VW_WEATHER"."AVG_CLOUD_COVER_TOT_PCT" BETWEEN 10 AND 50  THEN 'Partly Cloudy'
+                   WHEN "VW_WEATHER"."AVG_CLOUD_COVER_TOT_PCT" BETWEEN 50 AND 90  THEN 'Mostly Cloudy'
+                   WHEN "VW_WEATHER"."AVG_CLOUD_COVER_TOT_PCT" BETWEEN 90 AND 100 THEN 'Overcast'
+                   END 
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SL_LOADTABLES
+            nodeName: VW_WEATHER
+        join:
+          joinCondition: FROM {{ ref('SL_LOADTABLES', 'VW_WEATHER') }} "VW_WEATHER"
+        name: STG_VW_WEATHER
+        noLinkRefs: []
+  name: STG_VW_WEATHER
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

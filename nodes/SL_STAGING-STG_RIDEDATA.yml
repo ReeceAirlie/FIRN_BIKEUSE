@@ -272,14 +272,25 @@ operation:
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
-      - aliases: {}
+      - aliases:
+          RIDEDATA: 0fda493f-6138-4560-8ccc-27853eb4678f
         customSQL:
           customSQL: ""
         dependencies:
           - locationName: SL_LOADTABLES
             nodeName: RIDEDATA
         join:
-          joinCondition: FROM {{ ref('SL_LOADTABLES', 'RIDEDATA') }} "RIDEDATA"
+          joinCondition: |
+            FROM {{ ref('SL_LOADTABLES', 'RIDEDATA') }} "RIDEDATA"
+            JOIN
+            (SELECT "RIDEDATA"."RIDE_ID", MIN("RIDEDATA"."FILE_IMPORT_DATE") AS "FILE_IMPORT_DATE"
+             FROM {{ ref('SL_LOADTABLES', 'RIDEDATA') }}   "RIDEDATA" 
+            GROUP BY "RIDEDATA"."RIDE_ID"
+             ) "XXX"
+            ON "XXX"."RIDE_ID" = "RIDEDATA"."RIDE_ID"
+            AND "XXX"."FILE_IMPORT_DATE" = "RIDEDATA"."FILE_IMPORT_DATE"
+            
+            
         name: STG_RIDEDATA
         noLinkRefs: []
   name: STG_RIDEDATA
