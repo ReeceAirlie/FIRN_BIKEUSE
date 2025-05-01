@@ -2,3 +2,5 @@ defaultStorageMapping: SL_LOADTABLES
 fileVersion: 1
 locations:
   - SL_LOADTABLES
+  - SL_ODS
+  - SL_STAGING
