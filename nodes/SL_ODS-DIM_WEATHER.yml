@@ -108,7 +108,7 @@ operation:
           columnCounter: 50635a6a-2927-4dd8-92b9-e0b09dfc45dc
           stepCounter: c0638e19-feba-4f28-868d-d1ba836ce1ac
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: VARCHAR(20)
         description: ""
         name: CLOUDY
         nullable: true
