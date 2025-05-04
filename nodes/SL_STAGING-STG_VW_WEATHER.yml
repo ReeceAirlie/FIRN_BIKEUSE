@@ -1,5 +1,5 @@
 fileVersion: 1
-id: 22fef245-a55a-4b38-8bea-68c4333bf91f
+id: 29e02f8c-1226-471c-a494-68b8027472af
 name: STG_VW_WEATHER
 operation:
   config:
@@ -19,8 +19,8 @@ operation:
     columns:
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 49fe6e21-f39f-496b-9139-ab43271170b4
-          stepCounter: 22fef245-a55a-4b38-8bea-68c4333bf91f
+          columnCounter: cde2295b-bad2-4ba1-ab17-4bfce140985f
+          stepCounter: 29e02f8c-1226-471c-a494-68b8027472af
         config: {}
         dataType: VARCHAR(20)
         description: ""
@@ -28,13 +28,27 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: af2ee1ae-74b2-495b-86b2-34223dfd314a
-                stepCounter: 61c5103d-f3d1-4965-812b-cc47ca917020
+              - columnCounter: 3161a74d-a8b9-4e2b-ac36-b415428e1ade
+                stepCounter: 4685976c-faa8-4eae-90c8-4a987b5208d4
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 669ca252-0d90-43f5-8c3f-d740bd37bd62
-          stepCounter: 22fef245-a55a-4b38-8bea-68c4333bf91f
+          columnCounter: 88054907-c2e8-46dd-ac45-1a6d014fd17d
+          stepCounter: 29e02f8c-1226-471c-a494-68b8027472af
+        config: {}
+        dataType: VARCHAR(2)
+        description: ""
+        name: COUNTRY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f8f97f53-f208-4d53-bfce-bc80d9f95551
+                stepCounter: 4685976c-faa8-4eae-90c8-4a987b5208d4
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: dce776a9-3f2e-4b07-bf8c-d931e5dea44e
+          stepCounter: 29e02f8c-1226-471c-a494-68b8027472af
         config: {}
         dataType: DATE
         description: ""
@@ -42,13 +56,13 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 2aafb137-1f12-4645-9787-26ce7037b023
-                stepCounter: 61c5103d-f3d1-4965-812b-cc47ca917020
+              - columnCounter: 29b4326c-7563-47ba-9319-e6ee7d40b8d2
+                stepCounter: 4685976c-faa8-4eae-90c8-4a987b5208d4
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 544db718-655a-4f5d-8cf4-456f1aec240b
-          stepCounter: 22fef245-a55a-4b38-8bea-68c4333bf91f
+          columnCounter: 99dee628-a4e7-4c6d-b0d2-c893b34499cd
+          stepCounter: 29e02f8c-1226-471c-a494-68b8027472af
         config: {}
         dataType: NUMBER(38,1)
         description: ""
@@ -56,13 +70,13 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: c9cd36de-015f-4f48-82a1-1db42dfa8aa9
-                stepCounter: 61c5103d-f3d1-4965-812b-cc47ca917020
+              - columnCounter: 4b5f6209-a33c-4b58-80a1-406eab0222fa
+                stepCounter: 4685976c-faa8-4eae-90c8-4a987b5208d4
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 5b53b1a0-3d67-4183-b520-7117ddf6394d
-          stepCounter: 22fef245-a55a-4b38-8bea-68c4333bf91f
+          columnCounter: 9d5a0410-5d63-48a5-9a17-bac400057e2a
+          stepCounter: 29e02f8c-1226-471c-a494-68b8027472af
         config: {}
         dataType: NUMBER(38,1)
         description: ""
@@ -70,13 +84,27 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: cb2d7b1d-ff64-49ac-8a1d-963fbb91db5e
-                stepCounter: 61c5103d-f3d1-4965-812b-cc47ca917020
+              - columnCounter: 3069899a-866f-46b6-a9fd-0a976090afc7
+                stepCounter: 4685976c-faa8-4eae-90c8-4a987b5208d4
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: f5ec8bda-8c42-4f08-9627-21d4f8b2c562
-          stepCounter: 22fef245-a55a-4b38-8bea-68c4333bf91f
+          columnCounter: 51809f85-c2a6-41d5-b229-ec5fca6e72b1
+          stepCounter: 29e02f8c-1226-471c-a494-68b8027472af
+        config: {}
+        dataType: NUMBER(38,1)
+        description: ""
+        name: TOT_SNOWDEPTH_CM
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b1a50e21-8403-4aa1-999d-308798842a7a
+                stepCounter: 4685976c-faa8-4eae-90c8-4a987b5208d4
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1a03e8c6-ec38-4c4f-8a2c-dd8a3b37b479
+          stepCounter: 29e02f8c-1226-471c-a494-68b8027472af
         config: {}
         dataType: NUMBER(38,0)
         description: ""
@@ -84,28 +112,69 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: a320287d-91f3-432b-9755-fd731cbace88
-                stepCounter: 61c5103d-f3d1-4965-812b-cc47ca917020
+              - columnCounter: d6fc8c47-5183-49fe-8ecc-ab331aad5552
+                stepCounter: 4685976c-faa8-4eae-90c8-4a987b5208d4
             transform: ""
-      - appliedColumnTests: {}
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
         columnReference:
-          columnCounter: 12d2d075-b451-475d-9692-30b2bcbe0fbc
-          stepCounter: 22fef245-a55a-4b38-8bea-68c4333bf91f
+          columnCounter: 090c7d6b-4a1c-44b2-b0ae-e4d64be59f9d
+          stepCounter: 29e02f8c-1226-471c-a494-68b8027472af
         config: {}
-        dataType: NUMBER(38,0)
+        dataType: VARCHAR(10)
+        defaultValue: ""
         description: ""
+        keyColumnType: None
         name: CLOUDY
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: a320287d-91f3-432b-9755-fd731cbace88
-                stepCounter: 61c5103d-f3d1-4965-812b-cc47ca917020
+              - columnCounter: "0"
+                stepCounter: "0"
             transform: |-
-              CASE WHEN "VW_WEATHER"."AVG_CLOUD_COVER_TOT_PCT" BETWEEN 0  AND 10  THEN 'Clear'
-                   WHEN "VW_WEATHER"."AVG_CLOUD_COVER_TOT_PCT" BETWEEN 10 AND 50  THEN 'Partly Cloudy'
-                   WHEN "VW_WEATHER"."AVG_CLOUD_COVER_TOT_PCT" BETWEEN 50 AND 90  THEN 'Mostly Cloudy'
-                   WHEN "VW_WEATHER"."AVG_CLOUD_COVER_TOT_PCT" BETWEEN 90 AND 100 THEN 'Overcast'
-                   END 
+              CASE 
+              				 WHEN "VW_WEATHER"."TOT_SNOWFALL_CM" > 0  						 THEN 'Snow'
+              				 WHEN "VW_WEATHER"."TOT_PRECIPITATION_MM" BETWEEN .1    AND 2.5  THEN 'Light Rain'
+              			     WHEN "VW_WEATHER"."TOT_PRECIPITATION_MM" BETWEEN 2.5   AND 10   THEN 'Moderate Rain'
+              			     WHEN "VW_WEATHER"."TOT_PRECIPITATION_MM" >       10   			 THEN 'Heavy Rain'				 
+              				 WHEN "VW_WEATHER"."AVG_CLOUD_COVER_TOT_PCT" BETWEEN 0  AND 10   THEN  'Clear'
+              			     WHEN "VW_WEATHER"."AVG_CLOUD_COVER_TOT_PCT" BETWEEN 10 AND 50   THEN  'Partly Cloudy'
+              				 WHEN "VW_WEATHER"."AVG_CLOUD_COVER_TOT_PCT" BETWEEN 50 AND 90   THEN  'Mostly Cloudy'
+              				 WHEN "VW_WEATHER"."AVG_CLOUD_COVER_TOT_PCT" BETWEEN 90 AND 100  THEN  'Overcast'
+              	 END
+        systemColumnType: None
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6202997c-3c0c-4877-8b33-c6cfada72e56
+          stepCounter: 29e02f8c-1226-471c-a494-68b8027472af
+        config: {}
+        dataType: NUMBER(38,1)
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: CLOUDY_SORT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: |-
+              CASE 
+              				 WHEN "VW_WEATHER"."TOT_SNOWFALL_CM" > 0  						 THEN 8
+              				 WHEN "VW_WEATHER"."TOT_PRECIPITATION_MM" BETWEEN .1     AND 2.5  THEN 5
+              			     WHEN "VW_WEATHER"."TOT_PRECIPITATION_MM" BETWEEN 2.5   AND 10   THEN 6
+              			     WHEN "VW_WEATHER"."TOT_PRECIPITATION_MM" >       10   			 THEN 7				 
+              				 WHEN "VW_WEATHER"."AVG_CLOUD_COVER_TOT_PCT" BETWEEN 0  AND 10   THEN  1
+              			     WHEN "VW_WEATHER"."AVG_CLOUD_COVER_TOT_PCT" BETWEEN 10 AND 50   THEN  2
+              				 WHEN "VW_WEATHER"."AVG_CLOUD_COVER_TOT_PCT" BETWEEN 50 AND 90   THEN  3
+              				 WHEN "VW_WEATHER"."AVG_CLOUD_COVER_TOT_PCT" BETWEEN 90 AND 100  THEN  4
+              	 END
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:

@@ -1,5 +1,5 @@
 fileVersion: 1
-id: c0638e19-feba-4f28-868d-d1ba836ce1ac
+id: b5ab7138-d377-4059-b288-6df635e49fdc
 name: DIM_WEATHER
 operation:
   config:
@@ -20,8 +20,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 2f29cb93-66bf-40db-aaef-434eff96ef23
-          stepCounter: c0638e19-feba-4f28-868d-d1ba836ce1ac
+          columnCounter: 3a560562-ffd6-4277-adf6-1e1d99164674
+          stepCounter: b5ab7138-d377-4059-b288-6df635e49fdc
         config: {}
         dataType: NUMBER
         defaultValue: ""
@@ -34,8 +34,8 @@ operation:
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: b3762e33-68f0-4c75-9183-51770b8d5c5c
-          stepCounter: c0638e19-feba-4f28-868d-d1ba836ce1ac
+          columnCounter: 3099300a-64c9-4fd5-8dea-7b496001dfc5
+          stepCounter: b5ab7138-d377-4059-b288-6df635e49fdc
         config: {}
         dataType: VARCHAR(20)
         description: ""
@@ -43,13 +43,27 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 49fe6e21-f39f-496b-9139-ab43271170b4
-                stepCounter: 22fef245-a55a-4b38-8bea-68c4333bf91f
+              - columnCounter: cde2295b-bad2-4ba1-ab17-4bfce140985f
+                stepCounter: 29e02f8c-1226-471c-a494-68b8027472af
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: b8818c67-58af-4bb3-928a-c17da3b4daf8
-          stepCounter: c0638e19-feba-4f28-868d-d1ba836ce1ac
+          columnCounter: d2adcdd8-b417-4271-a9fb-ae6866a34e82
+          stepCounter: b5ab7138-d377-4059-b288-6df635e49fdc
+        config: {}
+        dataType: VARCHAR(2)
+        description: ""
+        name: COUNTRY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 88054907-c2e8-46dd-ac45-1a6d014fd17d
+                stepCounter: 29e02f8c-1226-471c-a494-68b8027472af
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 09d32e91-2c21-4a58-85c4-652456f401b1
+          stepCounter: b5ab7138-d377-4059-b288-6df635e49fdc
         config: {}
         dataType: DATE
         description: ""
@@ -58,13 +72,13 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 669ca252-0d90-43f5-8c3f-d740bd37bd62
-                stepCounter: 22fef245-a55a-4b38-8bea-68c4333bf91f
+              - columnCounter: dce776a9-3f2e-4b07-bf8c-d931e5dea44e
+                stepCounter: 29e02f8c-1226-471c-a494-68b8027472af
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 5ccd8277-ead4-465c-ba41-d86f5b96df4f
-          stepCounter: c0638e19-feba-4f28-868d-d1ba836ce1ac
+          columnCounter: f2a15706-520d-4142-9e08-1d8d4d03dbcd
+          stepCounter: b5ab7138-d377-4059-b288-6df635e49fdc
         config: {}
         dataType: NUMBER(38,1)
         description: ""
@@ -72,13 +86,13 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 544db718-655a-4f5d-8cf4-456f1aec240b
-                stepCounter: 22fef245-a55a-4b38-8bea-68c4333bf91f
+              - columnCounter: 99dee628-a4e7-4c6d-b0d2-c893b34499cd
+                stepCounter: 29e02f8c-1226-471c-a494-68b8027472af
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: e44e4d95-d9be-40cc-a0a2-a53ae70f2e93
-          stepCounter: c0638e19-feba-4f28-868d-d1ba836ce1ac
+          columnCounter: be246b21-566a-4aec-8349-49a1af76408c
+          stepCounter: b5ab7138-d377-4059-b288-6df635e49fdc
         config: {}
         dataType: NUMBER(38,1)
         description: ""
@@ -86,13 +100,27 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 5b53b1a0-3d67-4183-b520-7117ddf6394d
-                stepCounter: 22fef245-a55a-4b38-8bea-68c4333bf91f
+              - columnCounter: 9d5a0410-5d63-48a5-9a17-bac400057e2a
+                stepCounter: 29e02f8c-1226-471c-a494-68b8027472af
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 119f893c-f7cc-4d22-bfe9-40ebdc48932d
-          stepCounter: c0638e19-feba-4f28-868d-d1ba836ce1ac
+          columnCounter: 67ef345c-d141-45d7-b349-8adc078b43e1
+          stepCounter: b5ab7138-d377-4059-b288-6df635e49fdc
+        config: {}
+        dataType: NUMBER(38,1)
+        description: ""
+        name: TOT_SNOWDEPTH_CM
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 51809f85-c2a6-41d5-b229-ec5fca6e72b1
+                stepCounter: 29e02f8c-1226-471c-a494-68b8027472af
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5b2e5458-7457-4188-bc3f-4033fab927e6
+          stepCounter: b5ab7138-d377-4059-b288-6df635e49fdc
         config: {}
         dataType: NUMBER(38,0)
         description: ""
@@ -100,13 +128,13 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: f5ec8bda-8c42-4f08-9627-21d4f8b2c562
-                stepCounter: 22fef245-a55a-4b38-8bea-68c4333bf91f
+              - columnCounter: 1a03e8c6-ec38-4c4f-8a2c-dd8a3b37b479
+                stepCounter: 29e02f8c-1226-471c-a494-68b8027472af
             transform: ""
       - appliedColumnTests: {}
         columnReference:
-          columnCounter: 50635a6a-2927-4dd8-92b9-e0b09dfc45dc
-          stepCounter: c0638e19-feba-4f28-868d-d1ba836ce1ac
+          columnCounter: cbef2d61-e39e-4bb0-880a-9c9cf4d5136f
+          stepCounter: b5ab7138-d377-4059-b288-6df635e49fdc
         config: {}
         dataType: VARCHAR(20)
         description: ""
@@ -114,16 +142,30 @@ operation:
         nullable: true
         sourceColumnReferences:
           - columnReferences:
-              - columnCounter: 12d2d075-b451-475d-9692-30b2bcbe0fbc
-                stepCounter: 22fef245-a55a-4b38-8bea-68c4333bf91f
+              - columnCounter: 090c7d6b-4a1c-44b2-b0ae-e4d64be59f9d
+                stepCounter: 29e02f8c-1226-471c-a494-68b8027472af
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1fe0da1d-d0cb-4add-a152-19cb2e13c7bd
+          stepCounter: b5ab7138-d377-4059-b288-6df635e49fdc
+        config: {}
+        dataType: NUMBER(38,1)
+        description: ""
+        name: CLOUDY_SORT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6202997c-3c0c-4877-8b33-c6cfada72e56
+                stepCounter: 29e02f8c-1226-471c-a494-68b8027472af
             transform: ""
       - acceptedValues:
           strictMatch: true
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 83beae3c-154c-46d6-92bd-da9450c47b3d
-          stepCounter: c0638e19-feba-4f28-868d-d1ba836ce1ac
+          columnCounter: 398d91d2-5caa-4982-bac6-c1923e816239
+          stepCounter: b5ab7138-d377-4059-b288-6df635e49fdc
         config: {}
         dataType: NUMBER
         defaultValue: ""
@@ -139,8 +181,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 129aeb30-e301-4274-b03e-6e89fcd63de5
-          stepCounter: c0638e19-feba-4f28-868d-d1ba836ce1ac
+          columnCounter: 356aebbc-540a-41d3-8d78-0e2fb8c9b5f6
+          stepCounter: b5ab7138-d377-4059-b288-6df635e49fdc
         config: {}
         dataType: VARCHAR
         defaultValue: ""
@@ -156,8 +198,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: ac90a998-ffb6-484a-9e69-4d291b533654
-          stepCounter: c0638e19-feba-4f28-868d-d1ba836ce1ac
+          columnCounter: ec6117ab-fa61-4560-abcb-77fe07063d77
+          stepCounter: b5ab7138-d377-4059-b288-6df635e49fdc
         config: {}
         dataType: TIMESTAMP
         defaultValue: ""
@@ -173,8 +215,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 73344a66-9ed1-4997-8fd9-efb9d505288a
-          stepCounter: c0638e19-feba-4f28-868d-d1ba836ce1ac
+          columnCounter: 2ccc9e19-2437-4d4d-bdb2-bb11260f49df
+          stepCounter: b5ab7138-d377-4059-b288-6df635e49fdc
         config: {}
         dataType: TIMESTAMP
         defaultValue: ""
@@ -190,8 +232,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 2c5f2ea0-fddf-41fa-9e89-476b5f2a26e5
-          stepCounter: c0638e19-feba-4f28-868d-d1ba836ce1ac
+          columnCounter: 0738cb35-1129-42fb-838d-35beb0b7a343
+          stepCounter: b5ab7138-d377-4059-b288-6df635e49fdc
         config: {}
         dataType: TIMESTAMP
         defaultValue: ""
@@ -207,8 +249,8 @@ operation:
           values: []
         appliedColumnTests: {}
         columnReference:
-          columnCounter: 9b0bdaa3-94bd-4215-976c-908c903566f3
-          stepCounter: c0638e19-feba-4f28-868d-d1ba836ce1ac
+          columnCounter: 1f876996-3dfa-41d5-90ed-aa24672dbb6c
+          stepCounter: b5ab7138-d377-4059-b288-6df635e49fdc
         config: {}
         dataType: TIMESTAMP
         defaultValue: ""
@@ -222,16 +264,14 @@ operation:
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
-      - aliases:
-          STG_VW_WEATHER: 22fef245-a55a-4b38-8bea-68c4333bf91f
+      - aliases: {}
         customSQL:
           customSQL: ""
         dependencies:
           - locationName: SL_STAGING
             nodeName: STG_VW_WEATHER
         join:
-          joinCondition: |
-            FROM {{ ref('SL_STAGING', 'STG_VW_WEATHER') }} "STG_VW_WEATHER"
+          joinCondition: FROM {{ ref('SL_STAGING', 'STG_VW_WEATHER') }} "STG_VW_WEATHER"
         name: DIM_WEATHER
         noLinkRefs: []
   name: DIM_WEATHER
